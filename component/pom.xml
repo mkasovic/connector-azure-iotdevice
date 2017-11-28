@@ -154,6 +154,12 @@
                                     <type>${project.packaging}</type>
                                 </artifactItem>
                                 <artifactItem>
+                                    <groupId>org.bouncycastle</groupId>
+                                    <artifactId>bcprov-jdk16</artifactId>
+                                    <version>${bouncycastle.version}</version>
+                                    <type>${project.packaging}</type>
+                                </artifactItem>
+                                <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
                                     <version>${log4j.version}</version>
