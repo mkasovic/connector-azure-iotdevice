@@ -183,6 +183,7 @@
         <azureiot-device-sdk.version>1.5.37</azureiot-device-sdk.version>
         <azureiot-deps.version>0.1.4</azureiot-deps.version>
         <paho-mqtt-client.version>1.2.0</paho-mqtt-client.version>
+        <bouncycastle.version>1.46</bouncycastle.version>
         <log4j.version>1.2.17</log4j.version>
 
         <mvn.processor.plugin.version>2.2.4</mvn.processor.plugin.version>
