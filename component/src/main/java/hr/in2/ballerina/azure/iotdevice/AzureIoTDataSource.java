@@ -44,10 +44,13 @@ public class AzureIoTDataSource implements BValue {
                 sharedAccessKey);
         IotHubClientProtocol protocol = IotHubClientProtocol.MQTT;
 
-        // TODO: allow setting device client properties
+        long sasTokenExpiryTime = options.getIntField(0);
 
         try {
             this.client = new DeviceClient(connString, protocol);
+            if (sasTokenExpiryTime > 0) {
+                this.client.setOption("SetSASTokenExpiryTime", sasTokenExpiryTime);
+            }
             this.client.open();
         } catch (Throwable e) {
             throw new BallerinaException("Cannnot open connection to " + host, e);

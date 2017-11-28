@@ -1,7 +1,7 @@
 package ballerina.azure.iotdevice;
 
 public struct ConnectionProperties {
-	string name;
+	int sasTokenExpiryTime;
 }
 
 public struct Message {
